@@ -11,7 +11,8 @@ export const App = () => {
     <div>
       {isAdmin ? <span>管理者です</span> : <span>管理者以外です</span>}
       <button onClick={onClickSwitch}>切り替え</button>
-      <Card isAdmin={isAdmin} />
+      {/* 書籍に書いていたisadminのプロパティは必要なさげ */}
+      <Card />
     </div>
   );
 };
